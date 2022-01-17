@@ -1118,7 +1118,7 @@ a {
 }
 
 .solution {
-  padding: 80px  50px;
+  padding: 80px  50px 120px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 25%;
