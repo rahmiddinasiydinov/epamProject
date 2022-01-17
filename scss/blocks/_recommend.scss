@@ -1,0 +1,222 @@
+.recommend{
+    padding: 50px;
+    &__title{
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    &__text{
+        width: 650px;
+        max-width: 100%;
+        font-size: 14px;
+        margin: auto;
+        text-align: center;
+    }
+    &__wrapper{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 44% 54%;
+        gap: 2%;
+    }
+    .recommend__left{
+        padding: 50px 60px 600px;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('../../img/recom1.png');
+        background-size:contain;
+        background-position: center  350px;
+        background-repeat: no-repeat;
+        &-rational{
+            font-size: 20px;
+        }
+        &-title{
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        &-text{
+            width: 300px;
+            max-width: 100%;
+            text-align: center;
+            line-height: 2;
+        }
+    }
+    .recommend{
+        &__right{
+            background-color: #fff;
+        }
+        &__one{
+            height: 50%;
+            padding: 120px 50px 120px 240px;
+            background-color: #232323;
+            background-image: url('../../img/recom2.png');
+            background-size: 387px 413px;
+            background-repeat: no-repeat;
+            background-position: -200px center;
+
+            &-abat{
+                font-size: 20px;
+                color: #fff;
+            }
+            &-title{
+                font-size: 30px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                color: #fff;
+            }
+            &-text{
+                line-height:1.5;
+                color: #656565;
+                
+            }
+
+        }
+        &__two{
+            height: 50%;
+            padding: 80px  300px 0 60px ;
+            background-image: url('../../img/recom3.png');
+            background-repeat: no-repeat;
+            background-size: 387px 392px;
+            background-position: 480px 130px;
+            &-cold{
+                font-size: 20px;
+            }
+            &-title{
+                font-size: 30px;
+                margin: 30px 0;
+            }
+            &-text{
+                line-height: 1.5;
+                color: #818181;
+                letter-spacing: 1px;
+                font-size: 16px;
+            }
+            &-btn{
+                border: none;
+                margin-top: 30px;
+                cursor: pointer;
+                background-color: transparent;
+                @extend .recommend__two-text;
+                &:hover{
+                    transform: scale(1.1) translateX(10px);
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .recommend{
+    padding: 50px 0;
+    &__title{
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    &__text{
+        width: 650px;
+        max-width: 100%;
+        font-size: 14px;
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+    }
+    &__wrapper{
+        margin-top: 50px;
+        display:flex;
+        flex-direction: column;
+        padding: 0 10px;
+
+    }
+    .recommend__left{
+        padding: 50px 60px 50px 10px;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-image: url('../../img/recom1.png');
+        background-position: right 30px;
+        &-rational{
+            font-size: 20px;
+        }
+        &-title{
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        &-text{
+            width: 170px;
+            font-size: 14px;
+            line-height: 1.2;
+            text-align: left;
+        }
+    }
+    .recommend{
+        &__right{
+            background-color: #fff;
+        }
+        &__one{
+            height: 50%;
+            padding: 50px 15px 50px 150px;
+            background-image: url('../../img/recom2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: -180px center;
+
+            &-abat{
+                font-size: 16px;
+                color: #fff;
+            }
+            &-title{
+                font-size: 20px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                color: #fff;
+            }
+            &-text{
+                font-size: 14px;
+                line-height:1.2;
+                color: #656565;
+                
+            }
+
+        }
+        &__two{
+            height: 50%;
+            padding: 50px  150px 50px 10px ;
+            background-image: url('../../img/recom3.png');
+            background-repeat: no-repeat;
+            background-size: 300px 310px;
+            background-position: 230px 210px;
+            &-cold{
+                font-size: 20px;
+            }
+            &-title{
+                font-size: 30px;
+                margin: 30px 0;
+            }
+            &-text{
+                line-height: 1.2;
+                color: #000;
+                letter-spacing: 1px;
+                font-size: 16px;
+            }
+            &-btn{
+                border: none;
+                margin-top: 30px;
+                cursor: pointer;
+                background-color: transparent;
+                &:hover{
+                    transform: scale(1.1) translateX(10px);
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+}
