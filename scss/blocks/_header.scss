@@ -184,13 +184,13 @@
             padding: 10px 0;
             .menu{
                 &__list{
+                    width: 100%;
                     display: flex;
                     align-items: flex-start;
                     justify-content: space-between;
                 }
                 &__item{
                     display: flex;
-                    margin: 0 20px;
                     text-align: center;
                 }
               
@@ -241,29 +241,15 @@
             margin-right: 30px;
         }
 
-        &__footer{
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            .menu{
-                &__list{
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-                &__item{
-                    width: 150px;
-                    margin-top: 10px;
-                    display: flex;
-                    text-align: center;
-                }
-              
-            }
-            
-        }
+
     }
 }
 
-
+@media screen and (max-width:1370px){
+    .menu__list{
+        flex-wrap: wrap;
+    }
+}
 
 
 @media screen and (max-width:450px) {
