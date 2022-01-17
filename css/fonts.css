@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Myriad";
+    src: url("../fonts/Myriad.woff2") format("woff2"),
+         url("../fonts/Myriad.woff") format("woff");
+  }
