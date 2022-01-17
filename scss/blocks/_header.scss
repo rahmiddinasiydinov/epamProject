@@ -182,7 +182,6 @@
 
         &__footer{
             padding: 10px 0;
-            overflow: auto;
             .menu{
                 &__list{
                     display: flex;
@@ -191,7 +190,6 @@
                 }
                 &__item{
                     display: flex;
-                    width: 350px !important;
                     margin: 0 20px;
                     text-align: center;
                 }
@@ -245,17 +243,17 @@
 
         &__footer{
             padding: 10px 0;
-            overflow: auto;
+            display: flex;
+            justify-content: space-between;
             .menu{
                 &__list{
                     display: flex;
-                    align-items: flex-start;
-                    justify-content: space-between;
+                    flex-wrap: wrap;
                 }
                 &__item{
+                    width: 150px;
+                    margin-top: 10px;
                     display: flex;
-                    width: 350px !important;
-                    margin: 0 20px;
                     text-align: center;
                 }
               
