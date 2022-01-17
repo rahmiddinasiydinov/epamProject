@@ -21,6 +21,10 @@ a {
   padding-top: 25px;
 }
 
+.active {
+  display: block !important;
+}
+
 .container {
   width: 1545px;
   padding: 0 10px;
@@ -1394,13 +1398,14 @@ a {
     margin-bottom: 0;
   }
   .footer .links__list {
+    margin-top: 10px;
     margin-bottom: 8px;
     width: 450px;
     max-width: 100%;
     display: none;
   }
   .footer .links__link {
-    color: #fff;
+    color: #ddd;
   }
   .footer .contact__link {
     color: #fff;
